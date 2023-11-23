@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Government Scheme Details</title>
+    <link rel="stylesheet" href="moreDetails.css" />
+    <style>
+        .header {
+            /* background-color: #14e637; */
+            /* background-color: rgb(59, 161, 59); */
+            color: #fff;
+            padding: 50px;
+            background: url(Images/bg3.png) no-repeat;
+            text-align: center;
+
+            background-size: cover;
+            background-position: center center;
+            height: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- <h1>Government Scheme Details</h1> -->
+    </div>
+    <div class="container">
+        <!-- --- buttons -->
+        <div class="tab-buttons">
+            <button onclick="showTab('details')">Details</button>
+            <button onclick="showTab('benefits')">Benefits</button>
+            <button onclick="showTab('eligibility')">Eligibility</button>
+            <button onclick="showTab('applicationprocess')">Application Process</button>
+            <button onclick="showTab('documentsrequired')">Documents Required</button>
+
+            <!-- Add more tab buttons as needed -->
+        </div>
+
+        <!-- Tab content -->
+        <div id="details" class="scheme-details tab active-tab">
+            <h2>Details of AGR-50 Scheme-Assistance to Purchase Tractors</h2><br>
+            <p>
+                The scheme "AGR-50 Scheme-Assistance to Purchase Tractors" was started by the Department of Agriculture,
+                Farmers Welfare & Co-operation, Government of Gujarat in the year 2011-12. The scheme was implemented
+                for the farmers to help in buying the tractor in the state. Further, the scheme has been started in the
+                state, considering the tractor's importance, to increase farm mechanization in the state and the demand
+                of farmers from the society.<br><br>
+                The cost of the tractor was different in the whole state. As a result, small-scale farmers who could not
+                negotiate had to pay a higher price. In order to become available to all the farmers in the state at a
+                price and competitive prices in the state, the model of the tractor companies has been empanelled from
+                the year 2014-15. A tractor is an essential tool for expanding farm mechanization and increasing farm
+                power availability. To adopt power-operated tools/impalements farmers must have a tractor, so assistance
+                is given to farmers for the purchase of tractor. This scheme is a 100% state-sponsored scheme.</b>
+            </p>
+
+        </div>
+
+        <div id="benefits" class="scheme-details tab">
+
+            <p>
+            <ol type="1">
+                <li>
+                    <b>The financial assistance is given to farmers for the purchase of tractors as below:</b><br><br>
+                    a) Upto 40 PTO HP Model Tractors: 25% of expense or 45,000/-, whichever is less.<br>
+                    b) Above 40 PTO HP and up to 60 PTO HP Model Tractors: 25% of expense or *60,000/-, whichever is
+                    less.
+                </li>
+            </ol>
+            </p>
+        </div>
+
+        <div id="eligibility" class="scheme-details tab">
+
+            <p>
+                1. The beneficiary should be a permanent resident of Gujarat State.<br><br>
+                2. Any farmer of Gujarat state is eligible under this scheme.<br><br>
+                3. The beneficiary farmer has to purchase the empaneled tractor model of the manufacturer included in
+                the empanelment
+                prepared for the purpose of prize discovery announced by the agriculture department from time to time
+                for tractors from their authorized dealer.</b>
+            </p>
+        </div>
+
+        <div id="applicationprocess" class="scheme-details tab">
+
+            <p>
+                Step 1: To avail of the benefits of the scheme, the beneficiary has to apply online at l-Khedut Portal.
+                https://ikhedut.gujarat.gov.in/iKhedutPublicScheme/Public/frm_Public_SchemeDetails.aspx<br><br>
+                Step 2: Click on "Click here for details" in Farming Schemes Section.<br><br>
+                Step 3: Check the details of the "AGR-50" scheme corresponding to "Tractor-empaneled vendors".<br><br>
+                Step 4: Read the instruction carefully and choose the option 'Yes' or 'No' for "Are you a registered
+                applicant?" and click on "Click to proceed".<br><br>
+                Step 5: Click on the "Click to Apply Newly" button and submit a new application.<br><br>
+                Step 6: Click on the "Click to Update Application" button to add corrections to the application.<br><br>
+                Step 7: Click on "Click to confirm the application" and confirm the application. Once the application
+                is done, confirm it. Confirmation is required after saving the application. Only confirmed applications
+                will be considered. Unconfirmed applications will not be considered taken on ikhedut portal.<br><br>
+                Step 8: Take a printout of the confirmed application. The applicant has to take a printout of this
+                application and keep it for further reference.<br><br>
+                Step 9: For this scheme, the District Agriculture Officer of the concerned district has to be contacted
+                whose information is available on i-khedut portal.
+                https://ikhedut.gujarat.gov.in/Public/frm_Public_Contacts.aspx </p>
+        </div>
+
+        <div id="documentsrequired" class="scheme-details tab">
+            <p>
+            <ol type="1">
+                <li>Government-approved photo ID i.e. Aadhaar Card</li>
+                <li>Basis (evidence) for land (if applicable)</li>
+                <li>Caste Certificate (by competent authority) (if applicable)</li>
+                <li>Disability Certificate from Competent Authority (only for disabled) (if applicable)</li>
+                <li>Ration Card</li>
+                <li> Bank account details</li>
+                <li> Beneficiary's Undertaking/Consent Form</li>
+
+            </ol>
+            </p>
+        </div>
+        <!-- Add more tab content as needed -->
+    </div>
+
+    <script>
+        // JavaScript function to show the selected tab
+        function showTab(tabId) {
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function (tab) {
+                tab.classList.remove('active-tab');
+            });
+            document.getElementById(tabId).classList.add('active-tab');
+        }
+    </script>
+</body>
+
+</html>

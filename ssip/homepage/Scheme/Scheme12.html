@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Government Scheme Details</title>
+    <link rel="stylesheet" href="moreDetails.css" />
+    <style>
+        .header {
+            /* background-color: #14e637; */
+            /* background-color: rgb(59, 161, 59); */
+            color: #fff;
+            padding: 50px;
+            background: url(Images/bg12.png) no-repeat;
+            text-align: center;
+
+            background-size: cover;
+            background-position: center center;
+            height: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- <h1>Government Scheme Details</h1> -->
+    </div>
+    <div class="container">
+        <!-- --- buttons -->
+        <div class="tab-buttons">
+            <button onclick="showTab('details')">Details</button>
+            <button onclick="showTab('benefits')">Benefits</button>
+            <button onclick="showTab('eligibility')">Eligibility</button>
+            <button onclick="showTab('applicationprocess')">Application Process</button>
+            <button onclick="showTab('documentsrequired')">Documents Required</button>
+
+            <!-- Add more tab buttons as needed -->
+        </div>
+
+        <!-- Tab content -->
+        <div id="details" class="scheme-details tab active-tab">
+            <h2>Details of Kunvarbai Nu Mameru Yojana</h2><br>
+            <p>
+                Kunvarbai no Mameru Yojana” has been running for a long time in the state of Gujarat for the welfare of
+                the daughters of poor families and to help them financially. Daughters married in Kuvarbainu mameru
+                yojna get assistance paid directly into their bank account through DBT. This scheme is given to girls
+                belonging to Scheduled Castes, Socially and Educationally Backward Classes, Economically Weaker Families
+                by marrying off their daughters. 12000/- (twelve thousand) rupees is directly deposited in the bank
+                account through assistance in this scheme.
+            </p>
+
+        </div>
+
+        <div id="benefits" class="scheme-details tab">
+
+            <p>
+                If a girl from an economically weak family of Gujarat state gets married, the Gujarat government
+                used to pay 10,000/- (ten thousand rupees) assistance directly to the girl's bank account through
+                DBT (Direct Benefit Transfer). which has been amended.<br><br>
+
+                • A couple married after 01/04/2021 will get Rs 12,000/- (twelve thousand) under kuvarbai mameru
+                yojana.<br>
+                • Couples married before 01/04/2021 will be entitled to Rs 10,000/- (ten thousand) as per old
+                resolution.
+                </li>
+                </ol>
+            </p>
+        </div>
+
+        <div id="eligibility" class="scheme-details tab">
+
+            <p>• The benefit of this scheme is available to scheduled castes (natives of Gujarat state) only<br>
+                • The annual income limit in this scheme is Rs.600000/- in rural areas and ₹600000/- in urban areas.<br>
+                • Benefit under this scheme till the marriage of two (2) adult girls of the family<br>
+                • The age limit of the girl at the time of marriage should be 18 years and the age of the youth should
+                be
+                21 years.<br>
+                • Assistance must be applied for within two years of marriage.<br>
+                • The assistance of the scheme will be available to women from seven Fera Group Scheduled Districts.<br>
+
+            </p>
+        </div>
+
+        <div id="applicationprocess" class="scheme-details tab">
+
+            <p>Step - 1: First go to Google Search Bar and type 'e samaj kalyan'.<br>
+                Step - 2: In which one has to click on the social welfare department's online application website
+                https://esamajkalyan.gujarat.gov.in/<br>
+                Step - 3: Go to the e Samaj Kalyan portal and if you have not registered, click on “New User? "Please
+                Register
+                Here" and the process of registration has to be done.<br>
+                Step - 4: After successful registration the beneficiary has to open his page by clicking on e samaj
+                kalyan
+                “Citizen Login”.<br><br>
+                • Schemes will show the caste as indicated by the beneficiary at the time of registration.
+                In which one has to go to the Kuvarbai Nu Mameru Yojana Online Form and fill the requested details and
+                submit the online application.
+            </p>
+        </div>
+
+        <div id="documentsrequired" class="scheme-details tab">
+            <p>
+            <ol type="1">
+                <li>Daughter's Aadhaar Card</li>
+                <li> Girl's Election Card (ID)</li>
+                <li>Aadhaar card of the father of the beneficiary bride</li>
+                <li>Gender pattern of girls</li>
+                <li>Girl's School Leaving Certificate or Birth Certificate</li>
+                <li>Annual income certificate of bride's father/guardian</li>
+                <li>Residence proof of bride (any one of Licence/Electoral Card/Ration Card/Electricity Bill)</li>
+                <li>Copy of first page of bride's bank passbook (with father's/guardian's name after bride's name)</li>
+                <li> A joint photo of the bride and groom</li>
+                <li>Groom's Date of Birth Aadhaar (L.C/Date of Birth Specimen/Government Doctor's Certificate in case of
+                    Illiterate)</li>
+                <li>Marriage registration certificate</li>
+                <li>Affidavit of bride's father/guardian</li>
+                <li>Bond of bride's father</li>
+                <li>Example of death if bride's father is not alive</li>
+
+            </ol>
+            </p>
+        </div>
+        <!-- Add more tab content as needed -->
+    </div>
+
+    <script>
+        // JavaScript function to show the selected tab
+        function showTab(tabId) {
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function (tab) {
+                tab.classList.remove('active-tab');
+            });
+            document.getElementById(tabId).classList.add('active-tab');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Government Scheme Details</title>
+    <link rel="stylesheet" href="moreDetails.css" />
+    <style>
+        .header {
+            /* background-color: #14e637; */
+            /* background-color: rgb(59, 161, 59); */
+            color: #fff;
+            padding: 50px;
+            background: url(Images/bg9.png) no-repeat;
+            text-align: center;
+
+            background-size: cover;
+            background-position: center center;
+            height: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- <h1>Government Scheme Details</h1> -->
+    </div>
+    <div class="container">
+        <!-- --- buttons -->
+        <div class="tab-buttons">
+            <button onclick="showTab('details')">Details</button>
+            <button onclick="showTab('benefits')">Benefits</button>
+            <button onclick="showTab('eligibility')">Eligibility</button>
+            <button onclick="showTab('applicationprocess')">Application Process</button>
+            <button onclick="showTab('documentsrequired')">Documents Required</button>
+
+            <!-- Add more tab buttons as needed -->
+        </div>
+
+        <!-- Tab content -->
+        <div id="details" class="scheme-details tab active-tab">
+            <h2>Details of Indira Gandhi National Disability Pension Scheme</h2><br>
+            <p>
+                Indira Gandhi National Disability Scheme was launched on February 2009 by the Ministry of Rural
+                Development headed by the Central Government to support the disabled people in our country. This scheme
+                introduced under National Social Assistance Program provides monthly pension to disabled people for the
+                prosperity of their lives. Any disabled person whose age is more than 18 years, and with disability 80%
+                or more belonging to the poverty line can apply for this scheme.
+            </p>
+
+        </div>
+
+        <div id="benefits" class="scheme-details tab">
+
+            <p>
+
+                A pension of Rs.300/- per month is provided to Divyangjan between 18 years and 79 years. For persons
+                who are 80 years and above the pension of Rs.500/- per month will be provided.</li>
+
+            </p>
+        </div>
+
+        <div id="eligibility" class="scheme-details tab">
+
+            <p>
+                <b>The eligibility criteria for a disabled person to avail the benefits are as follows.</b><br><br>
+                • The age of the applicant should range between 18-79 years.<br>
+                • The applicant should be a resident of India.<br>
+                • The applicant should be a physically or mentally disabled person.<br>
+                • The applicant's disability should be more than 80%.<br>
+                • Dwarfs are also eligible for this scheme.<br>
+                • The applicant should belong to Below Poverty Line.
+            </p>
+        </div>
+
+        <div id="applicationprocess" class="scheme-details tab">
+
+            <p>Step 1 – One can download UMANG App or visit website https://web.umang.gov.in/web_new/home<br>
+                Step 2 – The citizen can login using mobile number and OTP.<br>
+                Step 3 – Once logged in, citizen can search for NSAP.<br>
+                Step 4 – Click on "Apply Online"<br>
+                Step 5 – Fill the basic details, choose the mode of payment of pension, upload photo and click on
+                "Submit". </p>
+        </div>
+
+        <div id="documentsrequired" class="scheme-details tab">
+            <p>
+            <ol type="1">
+                <li>BPL Card</li>
+                <li>Aadhaar card</li>
+                <li> Age Proof - For age, the birth certificate or school certificate may be relied on. In their absence
+                    ration card and EPIC may be considered. If there is no valid document, any Medical Officer of any
+                    government hospital may be authorized to issue the age certificate.</li>
+                <li>Disability certificate:- Disability certificate (80% and More) issued from Chief Medical Officer,
+                    Community Health Centre or Primary Health Centre will be accepted.</li>
+                <li>Passport Size Photographs.</li>
+
+            </ol>
+            </p>
+        </div>
+        <!-- Add more tab content as needed -->
+    </div>
+
+    <script>
+        // JavaScript function to show the selected tab
+        function showTab(tabId) {
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function (tab) {
+                tab.classList.remove('active-tab');
+            });
+            document.getElementById(tabId).classList.add('active-tab');
+        }
+    </script>
+</body>
+
+</html>

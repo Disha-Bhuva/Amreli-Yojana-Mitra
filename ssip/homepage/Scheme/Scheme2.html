@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Government Scheme Details</title>
+    <link rel="stylesheet" href="moreDetails.css" />
+    <style>
+        .header {
+            /* background-color: #14e637; */
+            /* background-color: rgb(59, 161, 59); */
+            color: #fff;
+            padding: 50px;
+            background: url(Images/bg2.png) no-repeat;
+            text-align: center;
+
+            background-size: cover;
+            background-position: center center;
+            height: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- <h1>Government Scheme Details</h1> -->
+    </div>
+    <div class="container">
+        <!-- --- buttons -->
+        <div class="tab-buttons">
+            <button onclick="showTab('details')">Details</button>
+            <button onclick="showTab('benefits')">Benefits</button>
+            <button onclick="showTab('eligibility')">Eligibility</button>
+            <button onclick="showTab('applicationprocess')">Application Process</button>
+            <button onclick="showTab('documentsrequired')">Documents Required</button>
+
+            <!-- Add more tab buttons as needed -->
+        </div>
+
+        <!-- Tab content -->
+        <div id="details" class="scheme-details tab active-tab">
+            <h2>Details of Mukhya Mantri Mahila Sashaktikaran Yojana</h2><br>
+            <p> Under the MMKSY scheme, women farmers in Gujarat are provided with financial assistance and training to
+                help them enhance their agricultural productivity and income. The scheme aims to provide a holistic
+                approach towards the development of women farmers, including improving their access to inputs, credit,
+                technology, and market.<br><br>
+                <b>Some of the key components of the scheme include:</b><br>
+                1. Providing financial assistance for farm activities, such as purchasing agricultural inputs, seeds,
+                equipment, etc.<br>
+                2. Providing training and capacity building for women farmers to enhance their skills and knowledge.<br>
+                3. Encouraging the formation of women farmer groups and providing support for their collective
+                activities.<br>
+                4. Providing access to credit for women farmers through various financial institutions.<br>
+                5. Providing market linkages and support for marketing their produce.<br>
+                The MMKSY scheme is aimed at promoting women's participation in agriculture and reducing the gender gap
+                in agriculture-related activities. It is expected to benefit around 7 lakh women farmers in the state of
+                Gujarat<br><br><br>
+            </p>
+            <p>
+
+            </p>
+        </div>
+
+        <div id="benefits" class="scheme-details tab">
+
+            <p>
+            <ol type="1">
+                <li>Financial Assistance: The scheme provides financial assistance to women farmers for various farm
+                    activities like purchasing inputs, seeds, equipment, etc. This helps in improving their agricultural
+                    productivity and income.</li><br>
+                <li>Training and Capacity Building: The scheme offers training and capacity-building programs to women
+                    farmers to enhance their skills and knowledge about modern agricultural practices. This helps in
+                    improving their productivity and income.</li><br>
+                <li>Access to Credit: The scheme aims to provide easy access to credit to women farmers through various
+                    financial institutions.</li>
+                This helps in reducing their dependency on moneylenders and promotes financial inclusion.<br>
+            </ol>
+            </p>
+        </div>
+
+        <div id="eligibility" class="scheme-details tab">
+
+            <p>
+            <ol type="1">
+                <li>Women Farmers: Only women farmers are eligible to apply for the scheme. Women farmers who own or
+                    operate agricultural land are eligible to apply.</li>
+                <li> Resident of Gujarat: Only women farmers who are residents of Gujarat are eligible to apply.</li>
+                <li>Age Criteria: There is no specific age limit for the scheme. Women farmers of all age groups can
+                    apply.</li>
+                <li>Income Criteria: There is no specific income criteria for the scheme. However, preference is given
+                    to women farmers who belong to economically weaker sections.</li>
+                <li> Land Holding: Women farmers who own or operate agricultural land are eligible to apply. The size of
+                    the landholding is not a criterion for eligibility.</li>
+                <li> Registration: Women farmers have to register themselves with the Department of Agriculture and
+                    Co-operation to apply for the scheme.</li>
+                <li> Group Formation: Women farmers can also form groups and apply for the scheme collectively..</li>
+            </ol>
+            </p>
+        </div>
+
+        <div id="applicationprocess" class="scheme-details tab">
+
+            <p>1. Visit the nearest government agriculture office or village panchayat office to obtain the application
+                form for MMKSY.<br>
+                2. Fill in the application form with all the required details such as personal information, landholding
+                details, agricultural activities, etc.<br>
+                3. Attach all the necessary documents, such as land ownership documents, identity proof, and bank
+                account details, along with the application form.<br>
+                4. Submit the application form along with the documents to the government agriculture office or village
+                panchayat office.<br>
+                5. After submission, the application will be verified by the concerned authorities, and financial
+                assistance will be provided to eligible women farmers.</p>
+        </div>
+
+        <div id="documentsrequired" class="scheme-details tab">
+            <p>
+            <ol type="1">
+                <li>Aadhaar Card: Applicants are required to provide their Aadhaar card as proof of identity and
+                    residency.</li>
+                <li>Land Documents: Women farmers who own or operate agricultural land have to provide the relevant land
+                    documents as proof of ownership or lease.</li>
+                <li> Bank Account Details: Applicants are required to provide their bank account details to receive
+                    financial assistance under the scheme.</li>
+                <li>Caste Certificate (if applicable): Women farmers belonging to Scheduled Castes, Scheduled Tribes,
+                    Other Backward Classes, or other marginalized groups may have to provide their caste certificate as
+                    proof of eligibility.</li>
+                <li> Income Certificate (if applicable): Applicants may have to provide their income certificate as
+                    proof of eligibility for the scheme.</li>
+                <li> Passport size photograph: Applicants may have to provide their passport-size photograph for the
+                    application form.</li>
+                <li> Registration Certificate: Applicants have to provide their registration certificate from the
+                    Department of Agriculture and Co-operation</li>
+            </ol>
+            </p>
+        </div>
+        <!-- Add more tab content as needed -->
+    </div>
+
+    <script>
+        // JavaScript function to show the selected tab
+        function showTab(tabId) {
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function (tab) {
+                tab.classList.remove('active-tab');
+            });
+            document.getElementById(tabId).classList.add('active-tab');
+        }
+    </script>
+</body>
+
+</html>

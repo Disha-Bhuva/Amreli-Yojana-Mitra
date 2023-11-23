@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Government Scheme Details</title>
+    <link rel="stylesheet" href="moreDetails.css" />
+    <style>
+        .header {
+            /* background-color: #14e637; */
+            /* background-color: rgb(59, 161, 59); */
+            color: #fff;
+            padding: 50px;
+            background: url(Images/bg8.png) no-repeat;
+            text-align: center;
+
+            background-size: cover;
+            background-position: center center;
+            height: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- <h1>Government Scheme Details</h1> -->
+    </div>
+    <div class="container">
+        <!-- --- buttons -->
+        <div class="tab-buttons">
+            <button onclick="showTab('details')">Details</button>
+            <button onclick="showTab('benefits')">Benefits</button>
+            <button onclick="showTab('eligibility')">Eligibility</button>
+            <button onclick="showTab('applicationprocess')">Application Process</button>
+            <button onclick="showTab('documentsrequired')">Documents Required</button>
+
+            <!-- Add more tab buttons as needed -->
+        </div>
+
+        <!-- Tab content -->
+        <div id="details" class="scheme-details tab active-tab">
+            <h2>Details of Bhagwan Budhdh Scholarship</h2><br>
+            <p>
+                An initiative of the Gujarat government helping many girls in the state to complete higher education.
+                Under this scheme, girls are provided financial assistance as per their respective studies. The
+                Scheduled Caste girls who are not eligible for Post-SSC Scholarship due to having more than two children
+                of employed parents or income of the family is more, even such girls can get scholarships from State
+                Government for post-SSC studies. All girl residents of Gujarat can avail benefits under this scheme.
+            </p>
+
+        </div>
+
+        <div id="benefits" class="scheme-details tab">
+
+            <p>
+            <table>
+                <tr>
+                    <th>Group</th>
+                    <th>Hosteller</th>
+                    <th>Day Scholar</th>
+
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>Rs. 13,000/-</td>
+                    <td>Rs. 7,000/-</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>Rs. 9,500/-</td>
+                    <td>Rs. 6,500/-</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Rs. 6,000/-</td>
+                    <td>Rs. 3,000/-</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>Rs. 4,000/-</td>
+                    <td>Rs. 2,500/-</td>
+                </tr>
+            </table>
+            <br>
+            <p>
+                • In addition to the above allowance, Approved tuition fees and Approved other fees are admissible, If
+                the
+                student is disabled then disability allowance is admissible.</p>
+            </p>
+        </div>
+
+        <div id="eligibility" class="scheme-details tab">
+
+            <p>
+                1. Only Scheduled Caste Girls Students are eligible.<br>
+                2. For Diploma level courses, In Std: 10 or 12 should have 50% or more percentile in the
+                examination.<br>
+                3. For Graduate level courses, In Std: 12 should have 50% or more percentile in the examination.<br>
+                4. Must full fill all conditions of the Government of India's Post Matric Scholarship Scheme
+                Guidelines.<br>
+                5. Income Limit: More than 2.50 Lakh.
+            </p>
+        </div>
+
+        <div id="applicationprocess" class="scheme-details tab">
+
+            <p>Step 1 – Applicants need to visit the official website
+                https://www.digitalgujarat.gov.in<br>
+                Step 2 – New applicants have to register his/her self first.<br>
+                Step 3 – At the time of registration, applicants have to provide their mobile number, email & set
+                password.<br>
+                Step 4 – Update profile.<br>
+                Step 5 – Applying for the scholarship. </p>
+        </div>
+
+        <div id="documentsrequired" class="scheme-details tab">
+            <p>
+            <ol type="1">
+                <li> Identity proof: Aadhar card, Voter ID, College ID, etc.</li>
+                <li> Residence proof: PAN card, Residence certificate, etc. </li>
+                <li> Income proof.</li>
+                <li> Aadhar card.</li>
+                <li> Passport-size photograph.</li>
+                <li> Academics certificates.</li>
+                <li> Bank details e.g. Account number, IFSC, MICR code.</li>
+                <li> Other documents may be required.</li>
+                <li> Caste certificate.</li>
+
+            </ol>
+            </p>
+        </div>
+        <!-- Add more tab content as needed -->
+    </div>
+
+    <script>
+        // JavaScript function to show the selected tab
+        function showTab(tabId) {
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function (tab) {
+                tab.classList.remove('active-tab');
+            });
+            document.getElementById(tabId).classList.add('active-tab');
+        }
+    </script>
+</body>
+
+</html>

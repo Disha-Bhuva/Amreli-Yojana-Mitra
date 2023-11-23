@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Government Scheme Details</title>
+    <link rel="stylesheet" href="moreDetails.css" />
+    <style>
+        .header {
+            /* background-color: #14e637; */
+            /* background-color: rgb(59, 161, 59); */
+            color: #fff;
+            padding: 50px;
+            background: url(Images/bg5.png) no-repeat;
+            text-align: center;
+
+            background-size: cover;
+            background-position: center center;
+            height: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- <h1>Government Scheme Details</h1> -->
+    </div>
+    <div class="container">
+        <!-- --- buttons -->
+        <div class="tab-buttons">
+            <button onclick="showTab('details')">Details</button>
+            <button onclick="showTab('benefits')">Benefits</button>
+            <button onclick="showTab('eligibility')">Eligibility</button>
+            <button onclick="showTab('applicationprocess')">Application Process</button>
+            <button onclick="showTab('documentsrequired')">Documents Required</button>
+
+            <!-- Add more tab buttons as needed -->
+        </div>
+
+        <!-- Tab content -->
+        <div id="details" class="scheme-details tab active-tab">
+            <h2>Details of NAMO E-Tablet Scheme</h2><br>
+            <p>
+                Under the Gujarat Namo Tablet Yojana, tablets are provided to students studying in colleges and
+                universities in the state. The tablets are given to students for free and are preloaded with
+                educational content, including textbooks, e-books, and video lectures, to facilitate their
+                studies.<br><br>
+                The Gujarat Namo Tablet Yojana is part of the state government's efforts to promote digital learning and
+                reduce the digital divide among students from different socioeconomic backgrounds. The tablets
+                distributed under the scheme are equipped with 4G connectivity and have a screen size of 7 inches.
+            </p>
+
+        </div>
+
+        <div id="benefits" class="scheme-details tab">
+
+            <p>
+
+                • Tablets are provided to students stydying in colleges and universities in the Gujarat state.
+
+            </p>
+        </div>
+
+        <div id="eligibility" class="scheme-details tab">
+
+            <p>
+                • The students should have passed the 12th examination from a recognized institution and board in
+                Gujarat.<br>
+                • He or she must be in the first year of college.<br>
+                • Students who have taken up polytechnic are also eligible.
+            </p>
+        </div>
+
+        <div id="applicationprocess" class="scheme-details tab">
+
+            <p>
+                Step - 1: Applicants have to visit their respective colleges to enrol in the Namo tablet scheme.<br>
+                Step - 2: Then institute will provide the details of the eligible candidate's details like name,
+                category, course, etc. in it.<br>
+                Step - 3: Institute will enter the board and the seat number which belongs to you.<br>
+                Step - 4: Institute will deposit the money (Rs. 1000) to the head of the institute.<br>
+                Step - 5: The head will generate a receipt against this payment.<br>
+                Step - 6: The receipt number and date will be entered on the website.<br>
+                Step - 7: Finally, the tablet will be provided to Applicants. </p>
+        </div>
+
+        <div id="documentsrequired" class="scheme-details tab">
+            <p>
+            <ol type="1">
+                <li> Domicile certificate.</li>
+                <li>Address Proof.</li>
+                <li> Voter ID card.</li>
+                <li>Aadhar card.</li>
+                <li>12th passing certificate.</li>
+                <li> Certificate to confirm admission in the under-graduation course or Polytechnic course.</li>
+                <li> Below the poverty line certificate.</li>
+                <li> Caste certificate.</li>
+
+            </ol>
+            </p>
+        </div>
+        <!-- Add more tab content as needed -->
+    </div>
+
+    <script>
+        // JavaScript function to show the selected tab
+        function showTab(tabId) {
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function (tab) {
+                tab.classList.remove('active-tab');
+            });
+            document.getElementById(tabId).classList.add('active-tab');
+        }
+    </script>
+</body>
+
+</html>
