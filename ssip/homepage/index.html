@@ -155,14 +155,20 @@
     <section class="contact" id="contact">
         <div class="row justify-content-md-center">
             <div class="col-10">
-                <form name='submit-to-google-sheet'
-                    action="https://script.google.com/macros/s/AKfycbz31C9kFLhAd4k_SDY_MSzGosh05zK0NtZ3w5_HjOP1yo6RDie-77RXVgjpPQdKXnyp/exec ">
+                <!-- <form name='submit-to-google-sheet'
+                    action="https://script.google.com/macros/s/AKfycbz31C9kFLhAd4k_SDY_MSzGosh05zK0NtZ3w5_HjOP1yo6RDie-77RXVgjpPQdKXnyp/exec "> -->
+                    <form action="https://formsubmit.co/marupooja34@gmail.com" method="post">
                     <h3>Contact US</h3>
-                    <input type="name" name="name" placeholder="your name" class="box">
+                    <!-- <input type="name" name="name" placeholder="your name" class="box">
                     <input type="email" name="email" placeholder="your email" class="box">
                     <input type="subject" name="subject" placeholder="subject" class="box">
                     <textarea placeholder="your message" name="message" class="box" cols="30" rows="10"></textarea>
-                    <input type="submit" value="send message" class="btn">
+                    <input type="submit" name="contact" value="send message" class="btn" onclick="send()"> -->
+                    <input type="text" id="name" placeholder="your name" class="box"  required>
+                <input type="email" id="email"  placeholder="your email" class="box" required>
+                <input type="tel" id="subject" placeholder="subject" class="box" required>
+                <textarea placeholder="your message" id="msg" class="box" cols="30" rows="10" required></textarea>
+                <input type="button" onclick="send()" name="contact" value="send message" class="btn">
                             
                 </form>
             </div>
@@ -206,7 +212,7 @@
 
 
 
-    <script src="nav_script.js"></script>
+    <!-- <script src="nav_script.js"></script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxeJmPwFWy2cbG1X0FUWj3b3d4ZbVMz2yIorQNbu8a0k1mZw0AJsLIw_AUtUz315p9r0g/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -220,7 +226,7 @@
     </script>
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/a079d41f-d08d-4b98-a3d0-1aabdd402554/webchat/config.js"
-         defer></script>
+         defer></script> -->
 
     <!-- GOGGLE TRANSLATE -->
         <script type="text/javascript">
@@ -231,6 +237,42 @@
     
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+            function send(){
+                var name = document.getElementById("name").value;
+                var email=document.getElementById("email").value;
+                var subject=document.getElementById("subject").value; 
+                var msg=document.getElementById("msg").value;
+        
+                var body="name: " + name + "<br/> Email: " + email + "<br/> Subject: " + subject + "<br/> Message: " + msg ;
+        
+                console.log(body);
+        
+                Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "marupooja34@gmail.com",
+            Password : "59229C6581D031CC9AAFA094C588F0A98519",
+            To : 'udaymaru17@gmail.com',
+            From : 'marupooja34@gmail.com',
+            Subject : subject,
+            Body : body
+        }).then(
+          message => 
+          {
+            if(message=='OK'){
+                swal("Successful!", "Your data successfully recieved", "success");
+            }
+            else{
+                swal("Something wrong", "Your data is not successfully recieved", "error");
+            }
+          }
+        );
+        
+            }
+        </script>
 </body>
 
 </html>
